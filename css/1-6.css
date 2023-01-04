@@ -1,0 +1,63 @@
+.login-container{
+  width:40%;
+  background: pink;
+  text-align: center;
+  padding:10px 30px;
+  position: relative;
+}
+
+.login-container h2{
+  text-align: left;
+}
+
+.login-container p{
+  margin:3px;
+  text-align: left;
+}
+
+.login-container input{
+  /* padding:10px; */
+  border: 1px solid silver;
+  border-radius: 5px;
+  width:100%;
+}
+
+.login-first-name{
+  float:left;
+  width:47%;
+}
+
+.login-last-name{
+  float:right;
+  width:47%;
+}
+
+.login-message{
+  clear:both;
+}
+
+.login-message input{
+  padding:50px 5px;
+}
+
+.login-sub{
+  float:left;
+}
+
+.login-sub p{
+  margin:0px;
+  float:left;
+}
+
+.login-send{
+  float:right;
+}
+
+.login-send button{
+  padding:5px 30px;
+  background: orange;
+  color:white;
+  border: none;
+  border-radius: 5px;
+}
+

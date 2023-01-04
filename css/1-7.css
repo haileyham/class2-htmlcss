@@ -1,0 +1,66 @@
+div,input,textarea{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0px;
+}
+
+
+.form-background{
+  background-color: black;
+  padding:30px;
+}
+
+.form-white{
+  background-color: white;
+  padding:30px;
+  width:80%;
+  max-width:600px;
+  margin:auto;
+  /* 가운데정렬 위해서 margin:auto */
+}
+
+.form-input{
+  width:100%;
+  /* 실제 width는 100% + 20px이 되어있음 모양이 이상해짐
+  그래서 위에 box-sizing:border-box;해야함 */
+  padding:10px;
+  font-size:20px;
+  border:1px solid black;
+  border-radius: 5px;
+  /* box-sizing: border-box;
+  한번에 해주기 위해서 div,input,textarea 위에 짜놓기 */
+}
+
+.form-white input{
+  width:100%;
+  padding:10px;
+  font-size:20px;
+  border:1px solid black;
+  border-radius: 5px;
+}
+
+.w-100{
+  width:100%;
+  padding:10px;
+}
+
+.w-50{
+  width:50%;
+  float:left;
+  padding:10px;
+}
+
+.check-box{
+  display:inline-block;
+}
+
+
+.yellow-button{
+  padding:10px;
+  color:white;
+  background: orange;
+  display:block;
+  margin-left: auto;
+}
