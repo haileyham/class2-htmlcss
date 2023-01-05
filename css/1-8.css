@@ -1,0 +1,45 @@
+div,table{
+  box-sizing: border;
+}
+
+.cart-container{
+  background: rgba(100,150,200,0.5);
+  padding:30px;
+}
+
+.cart-your{
+}
+
+td,th{
+  border:1px solid rgba(100,150,200,0.5);
+}
+
+.cart-table{
+  width:500px;
+  height:150px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+table{
+  border-collapse: collapse;
+  border-style:hidden;
+  background: white;
+}
+
+.cart-edit{
+  float:left;
+}
+
+.cart-btn{
+  float:left;
+  margin-left:100px;
+}
+
+
+
+
+
+
+

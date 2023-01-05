@@ -1,0 +1,23 @@
+@font-face{
+  font-family:'작명';
+  src:url(/font/NanumSquareR.ttf);
+}
+/* 밑에서 폰트 '작명'하면 위에거 적용됨 */
+/* 한글폰트는 사이즈가 크기때문에 1-2개만 써야함. 로딩 오래걸림 */
+/* 웹용 폰트 사용. ttf말고 용량줄이려면 .woff쓰기(용량이 1/3줄어듦) */
+
+/* 혹은 google이용해서 https://fonts.google.com/
+링크연결로 집어넣기, link나 @import로 추가가능 */
+
+body{
+  margin:0px;
+  font-family:'작명', 'gulim'; 
+  font-weight: 900;
+}
+/* font-weight 그냥주면 안예쁘기에 굵은 폰트 따로 등록하는 것이 좋음 */
+
+
+p,h1{
+  transform:rotate(0.03deg);
+}
+/* 굴림체에서 폰트 부드럽게 하기 위해서 살짝 돌리면됨 */

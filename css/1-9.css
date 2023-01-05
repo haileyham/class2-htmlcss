@@ -1,0 +1,102 @@
+th,td{
+  /* border:1px solid black; */
+}
+
+.cart-table td, .cart-table th{
+  padding:15px;
+  border-bottom:1px solid #c2d3de;
+}
+/* border를 bottom만 줄 수 있음 */
+/* table내의 td선만 주기, 테이블 안 크기 조정padding으로 */
+
+table{
+  border-collapse: collapse;
+  border-radius:10px;
+  border-style: hidden;
+  /* box-shadow:0 0 0 1px #666; */
+}
+/* border-radius 안먹을때(border-collapse랑 충돌해서 그럴수있음 위의 방법써서하기) */
+/* 위에서 border black첨에 줬던거 없애면서 box-shadow필요성 없어져서 지움 */
+
+.cart-background{
+  width:100%;
+  background: #c2d3de;
+  padding:30px;
+}
+
+.cart-table{
+  width:100%;
+  max-width:700px;
+  margin:auto;
+  background: white;
+  border-radius:10px;
+}
+
+.cell-long{
+  width:150px;
+}
+
+/* .cart-table th:nth-child(2){}
+cart-table의 th중에 2번째 */
+
+
+.btn{
+  padding:15px;
+  font-size:20px;
+  border:none;
+  border-radius: 10px;
+  background: coral;
+  color:white;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: red;
+}
+
+.btn:focus{
+  background: white;
+}
+
+.btn:active{
+  background: chocolate;
+}
+/*호fa라고 외우기*/
+
+.input-test{
+  font-size: 20px;
+}
+
+.input-test:focus{
+  border:10px solid red;
+}
+
+.custom-link{
+  text-decoration: none;
+}
+
+.custom-link:link{
+  color:aqua;
+}
+
+.custom-link:visited{
+  color:white;
+}
+
+
+
+
+.main-btn{
+  padding:15px;
+  font-size: 20px;
+  border:none;
+  cursor: pointer;
+}
+
+.bg-red{
+  background: red;
+}
+
+.bg-blue{
+  background: blue;
+}
