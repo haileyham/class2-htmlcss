@@ -1,0 +1,147 @@
+body{
+  margin:0px;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+.main-background{
+  width:100%;
+  height:500px;
+  background-image: url(/img/shoes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  /* filter:brightness(70%); */
+  padding:1px;
+  text-align: center;
+  position: relative;
+}
+
+.main-title{
+  color:white;
+  font-size:40px;
+  margin-top:150px;
+  text-align: center;
+}
+
+.main-ex{
+  color:white;
+  /* text-align: center; */
+  /* main-backgroun에 text-align:center주니까 위에꺼 안써도됨 */
+  font-size: 18px;
+}
+
+.main-btn{
+  /* margin-left:auto;
+  margin-right:auto;
+  display:block; */
+  /* main-backgroun에 text-align:center주니까 위에꺼 안써도됨 */
+  color:white;
+  border:none;
+  border-radius: 5px;
+  padding:5px 20px;
+  background: silver;
+  position: absolute;
+  left:0px;
+  right:0px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100px;
+}
+
+/* .main-bottom{
+  background: gainsboro;
+  bottom:-100px;
+  width:500px;
+  margin-left:auto;
+  margin-right:auto;
+  right:0px;
+  left:0px;
+  padding:20px;
+} */
+
+.explain-box{
+  /* width:700px; 주려다가 50%뺀이유는 크기 줄였을때도 같이 적용되라고..
+  참고로 위에 box내에 만들었던 방법은 %로 줬을때 box안의 내용들때문에 
+  타고타고 올라와서 botton을 가리게됨. 그래서 지금 background 박스 밑에 따로 만든
+  이 box에 % 주는 것은 이러한 문제점들을 해결해주는듯. body에 % 반응형레이아웃.
+  width %의 문제는 pc사이즈에서 너무 크다는 것 > 이를 해결하기 위해서 max-width와 
+  함께 쓰면 됨.  */
+  width:80%;
+  max-width:600px;
+  margin:auto;
+  padding:20px;
+  background:#eee ;
+  text-align: center;
+  position: relative;
+  bottom:100px;
+  /* box-sizing: border-box; 
+  div에다가 넣어두기. 개발시작할때 편안하게 모든 width적용되도록*/
+}
+
+
+
+
+
+
+.test{
+  width:100px;
+  height:100px;
+  background: gray;
+}
+
+
+.hw-container{
+  display:flex;
+  text-align: center;
+}
+
+.hw-1{
+  width:25%;
+}
+
+
+@media screen and (max-width:1200px){
+  .hw-container{
+    flex-wrap:wrap;
+  }
+  .hw-1{
+    width:50%;
+  }
+}
+
+@media screen and (max-width:576px){
+  .hw-1{
+    width:100%;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+  .main-title{
+    font-size: 30px;
+  }
+}
+/* 현재 브라우저 폭이 1200px이하인 경우 {}적용, 
+class 여러개 적용 가능,미디어쿼리 여러개도 사용가능
+
+breakpoint기준 px값은 다른사람 따라하는것을 권장
+1200px 992px 768px 576px
+참고로 brakpoint 4개 넘어가면 복잡함. 3개정도까지만..*/
+@media screen and (max-width:768px){
+  .main-title{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:576px){
+  .main-title{
+    font-size: 10px;
+  }
+}
