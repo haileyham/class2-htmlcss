@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 위에꺼는 반응형사이트에 필요 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 폰트아섬아이콘 font awesome 1. CDN방법 2. 다운받아서 사용도 가능 -->
   <link rel="icon" href="/img/adventure time2.jpg" type="image/x-icon">
   <link href="/css/2-3.css" rel="stylesheet">
   <title>2-3 반응형레이아웃 html</title>
 </head>
+
 <body>
+
+  <div class="shop-bg">
+    <div class="shop-container">
+      <div class="shop-item">
+        <div style="position:relative;">
+          <!-- (2)이미지 붕떠있는거 기준점주기위해서 가상박스 감싸줌 -->
+          <div class="overlay"></div>
+          <!-- (1)이미지 위에 붕떠있게 하기 위해서  -->
+          <img src="/img/product1-1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <div style="position:relative;">
+          <div class="overlay2-wrap">
+            <div class="overlay2"></div>
+          </div>
+          <!-- 위랑은 다르게 밑에서 올라오는거기때문에 겉에 하나 감싸주기 -->
+          <img src="/img/product2.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <img src="/img/product3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- one way애니메이션 만드는 step
+1.시작스타일 만들기
+2.최종스타일 만들기
+3.언제 최종스타일로 변하는지
+4.transition으로 애니메이션 -->
+
 
   <div class="hw-container">
     <div class="hw-1">
+      <i class="fa-solid fa-cart-shopping fa-3x"></i>
       <h4 class="hw-h">Fast Shipping</h4>
       <p class="hw-p">lorem ipsum</p>
     </div>
     <div class="hw-1">
+      <i class="fa-solid fa-globe fa-3x"></i>
       <h4 class="hw-h">Good Service</h4>
       <p class="hw-p">lorem ipsum</p>
     </div>
     <div class="hw-1">
+      <i class="fa-solid fa-ticket fa-3x"></i>
       <h4 class="hw-h">Free Coupons</h4>
       <p class="hw-p">lorem ipsum</p>
     </div>
     <div class="hw-1">
+      <i class="fa-solid fa-box fa-3x"></i>
       <h4 class="hw-h">New Products</h4>
       <p class="hw-p">lorem ipsum</p>
     </div>
@@ -36,7 +79,8 @@
 
   <div class="main-background">
     <h4 class="main-title">Buy Our Shoues!</h4>
-    <p class="main-ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi laboriosam, pariatur possimus deserunt animi nihil consequatur amet nesciunt.</p>
+    <p class="main-ex">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi laboriosam, pariatur possimus
+      deserunt animi nihil consequatur amet nesciunt.</p>
     <button class="main-btn">Buy Now!</button>
     <!-- <div class="main-bottom">
       <h4>How we design our shoes</h4>
@@ -46,10 +90,13 @@
 
   <div class="explain-box">
     <h4>How we design our shoes</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsa fugit ratione blanditiis recusandae ut temporibus quam id, eum quod consectetur obcaecati aperiam? Suscipit aspernatur ducimus dolores voluptas at expedita!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsa fugit ratione blanditiis recusandae
+      ut temporibus quam id, eum quod consectetur obcaecati aperiam? Suscipit aspernatur ducimus dolores voluptas at
+      expedita!</p>
   </div>
 
 
 
 </body>
+
 </html>

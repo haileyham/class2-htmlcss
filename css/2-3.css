@@ -97,11 +97,96 @@ div{
 .hw-container{
   display:flex;
   text-align: center; 
+  margin:auto;
+  width:80%;
+  max-width: 1000px;
 }
 
 .hw-1{
   width:25%;
 }
+
+.hw-1 i{
+  background-color: burlywood;
+  width:100px;
+  height:100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  /* 위에공간 내려주기 */
+  box-sizing: border-box;
+  /* 어디공간잇는지 보더사이즈로 조정 */
+  color:white;
+  margin-top: 20px;
+}
+
+
+.shop-bg{
+  background-color: #eee;
+  padding: 20px;
+}
+
+.shop-container{
+  display:flex;
+  max-width: 90%;
+  margin:auto;
+}
+
+.shop-item{
+  width:33%;
+  padding:10px;
+}
+
+.shop-item img{
+  width:100%;
+  display:block;
+  /* 겉에 최종스타일 검정색바탕 밑에 선 살짝 안맞는거 맞추기위해서
+  (보이지않는 선 존재하기에) */
+}
+
+
+
+.overlay{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  /* 시작스타일은 opacity: 0; 최종스타일은 opacity: 1; */
+  transition: all 1s;
+}
+
+.overlay:hover{
+  opacity: 1;
+  /* 마우스 가져다댔을때 변경하도록 */
+}
+
+.overlay2-wrap{
+  position: absolute;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  /* 넘치는 부분 안보이게 가려주기 */
+}
+
+.overlay2{
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.5);
+  padding:20px;
+  margin-top: 100%;
+  transition: all 1s;
+}
+
+.overlay2-wrap:hover .overlay2 {
+  margin-top : 50%;
+}
+/* 안에다가 줘야하기때문에 .overlay2-wrap마우스 올리면 그 안의 .overlay2이 작동 */
+
+
+
+
+
+
 
 
 @media screen and (max-width:1200px){
@@ -110,6 +195,7 @@ div{
   }
   .hw-1{
     width:50%;
+    max-width: 400px;
   }
 }
 
