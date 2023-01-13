@@ -5,9 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/css/2-4.css" rel="stylesheet">
-  <title>2-4 port</title>
+  <title>2-4 portfolio 1 : landing page</title>
 </head>
 <body>
+  글로 먼저 짜보기
+
+  - 배경색상 그라데이션으로 주기(파랑>보라)
+  - flex 이용해서 lading page글과 폰사진 가로배치
+  - 모바일의 경우 flex-direction 으로 세로배치하기
+  - 배경밑에 container만들어서 상단 전체 박스잡고(글,폰) 거기에 position:relative;주기
+  - container밑에 (글,폰) position:absoulte; 줘서 고정해주기
+
+  - 흰색 중간 박스 만들어서 위치 시켜주기
+  - 가운데 글씨는 margin:auto;로 box조정해주기
   
+  - 큰 박스 하나 만들어서 what we offer이랑 4개 아이콘 담아주기
+  - what we offer 가운데 위치해주기
+  - 아이콘의 경우 flex로 4개 가로배치 (아이콘container에 flex주고,
+    밑에 flex-item들에게 조정해주기 25%씩)
+  - 동그라미 안에 아이콘들 padding이랑 box-sizing 제대로 조정법 복습하기
+  - border-radius주고, padding-top줘서 아이콘띄워주기, 타원이상한건 여백존재해서 > 여백제거 위해서 box-sizing:borderbox;로
+
+  - 큰 박스 안에 what we can do랑 4개 그림 담기
+  - 이미지전체박스 + 이미지 4개 flex로 넣어주는데 wrap으로 4개 위치? > 잘 모르겠음 아직
+  - 첫번째 이미지에 hover했을때 배경 하얀색 테두리 생기게하기(transition 애니메이션)
+  - 테두리생기게하기 위해서는 투명박스 위에 입혀야함(변경본 감싸줄박스)
+  - 그리고 투명박스 위치 잡아줘야해서 position:relative줄 박스 하나 필요(변경본+이미지 감싸줄)
+
+
 </body>
 </html>
