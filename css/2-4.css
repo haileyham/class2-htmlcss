@@ -1,0 +1,12 @@
+.main-background{
+  max-width: 1400px;
+  background: linear-gradient(rgb(102, 136, 248),rgb(149, 111, 252),rgb(154, 66, 255));
+}
+
+.main-img-iphone{
+  width:25%;
+}
+
+.portfolio-item img{
+  width:200px;
+}
