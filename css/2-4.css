@@ -1,12 +1,221 @@
+div{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0px;
+}
+
 .main-background{
   max-width: 1400px;
-  background: linear-gradient(rgb(102, 136, 248),rgb(149, 111, 252),rgb(154, 66, 255));
+  background: linear-gradient(rgb(73,151,220),rgb(78,97,192));
+  display:flex;
+  position: relative;
+}
+
+.main-in{
+  width:50%;
+  padding:50px;
+  color:white;
+  margin:20px;
+  margin-left:50px;
+}
+
+.main-in p{
+  font-size: 14px;
+  width:100%;
+}
+
+.main-btn{
+  margin-top: 10px;
+}
+
+.btn-gray{
+  color:white;
+  background: rgb(56, 54, 54);
+  border:none;
+  border-radius: 5px;
+  padding:10px;
+}
+
+.main-img{
+  width:50%;
+  margin-top:60px;
+  margin-left:300px;
 }
 
 .main-img-iphone{
+  max-width:300px;
+  display:block;
+  /* 이거 밑에서 4개짜리 port에서 방법 발견해서 똑같이 적용...징쨔 잊지말아야지 */
+}
+
+
+
+
+.mid-background{
+  max-width:1400px;
+  background: white;
+}
+
+.mid-container{
+  margin:70px;
+  text-align:center;
+}
+
+
+
+.offer-background{
+  max-width: 1400px;
+  background: rgb(78,97,192);
+  padding:1px;
+}
+
+.offer-main{
+  text-align: center;
+  margin-top:30px;
+  margin-bottom:10px;
+  color:white;
+}
+
+.offer-main p, h4{
+  margin:0px;
+}
+
+.offer-content-container{
+  width: 70%;
+  text-align: center;
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:50px;
+}
+
+.offer-content-item{
   width:25%;
 }
 
+.offer-content-item i{
+  color:rgb(78,97,192);
+  background: white;
+  width:80px;
+  height:80px;
+  font-size: 30px;
+  padding:25px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin:10px;
+}
+
+.offer-content-item h5, p{
+  color:white;
+  margin:1px;
+}
+
+.offer-main-title{
+  color:white;
+}
+
+.offer-content-item p{
+  font-size: 10px;
+}
+
+
+
+
+.portfolio-background{
+  max-width: 1400px;
+}
+
+.portfolio-main{
+  text-align: center;
+  margin:20px;
+  margin-top:50px;
+  
+}
+
+.portfolio-main p,h4{
+  color:black;
+  margin:0px;
+}
+
+.portfolio-main p{
+  font-size: 10px;
+}
+
+.portfolio-container{
+  display:flex;
+  flex-wrap:wrap;
+  margin: 0px;
+  width:70%;
+  margin:auto;
+  justify-content: center;
+}
+
+.portfolio-item{
+  width:50%;
+}
+
 .portfolio-item img{
-  width:200px;
+  width:100%;
+  margin:0px;
+  display:block;
+  /* 와,,,이거 또 틀렸네 ㅠㅠ 이전에 했던거 보고 다시 찾아옴. 겉에 최종스타일 검정색
+  바탕 밑에 선 살짝 안맞는거 맞추기 위해서(보이지 않는 선 존재)>box-sizing이랑 margin: ;
+  이런걸로 해결되는줄 알았는데, 그게 아녔다.  */
+}
+
+.portfolio-overlay1-wrap{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+.overlay1{
+  width:100%;
+  height:100%;
+  transition: all 1s;
+}
+
+.portfolio-overlay1-wrap:hover .overlay1{
+  border: 30px solid white;
+}
+
+
+
+.end-container{
+  max-width: 1400px;
+}
+
+.end-link{
+  display:flex;
+  justify-content: center;
+  width:70%;
+  margin:auto;
+}
+
+.end-link-item{
+  padding:20px;
+}
+
+.end-link-item i{
+  font-size: 20px;
+  color:white;
+  width:40px;
+  height:40px;
+  background: rgb(78,97,192);
+  padding-top:10px;
+  text-align:center;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.end-copy-con{
+  box-sizing: border-box;
+  margin:auto;
+}
+
+.end-copy{
+  text-align:center;
+  color:black;
 }
