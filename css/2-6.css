@@ -1,0 +1,49 @@
+body{
+  background: #f7f9fc ;
+  margin:70px;
+}
+
+.bluebtn{
+  background: #6fbaf8 ;
+  border: none;
+}
+
+.bluetxt{
+  color:#6fbaf8 ;
+  text-decoration: none;
+}
+
+.water-icon{
+  font-size: 60px;
+}
+
+.margin-center{
+  margin:auto;
+}
+
+.border-bottom-blue{
+  border-bottom: 5px solid #6fbaf8;
+}
+
+.border-bold{
+  border-bottom: 5px solid #eee;
+}
+
+.margin-0{
+  margin:0px;
+}
+
+.might-know-name{
+  font-size:15px;
+}
+
+.location-mini{
+  font-size:10px;
+}
+
+.bg-white{
+  background: white;
+  color:black;
+  border: 2px solid #eee;
+  padding:10px;
+}
