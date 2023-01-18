@@ -1,0 +1,107 @@
+.box{
+  width:100%;
+}
+
+
+$메인칼라 : #2a4cb2;
+$서브칼라 : pink;
+$기본사이즈 : 14px;
+// $변수명 : 저장해서 쓸 값;
+
+.background{
+  background-color: $메인칼라;
+  font-size: $기본사이즈 - 2px;
+  // $기본사이즈에서 -2px 하는 것도 가능 = 12px; 
+  // + - 는 같은 단위끼리(px은 px끼리 등) 하기. px,% 은 에러남
+  // 사칙연산 가능
+  // 관리가 편해짐
+}
+
+
+
+//nesting문법 : -관련있는 class들 묶을 때 좋음.
+.main-bg{
+  h4{
+  }
+  button{
+  }
+}
+// 이거는 
+// .main-bg h4{
+// }
+// .main-bg button{
+// } 이거랑 같음
+
+
+// @extend 문법 : class전체를 복사해주는 문법
+// 중복된 스타일들이 많으면 1. 클래스로 묶어두고 2. @extend로 필요할때 복사
+%btn{
+  width:100px;
+  height:100px;
+  padding:20px;
+}
+// %임시클래스명 (단독으로 컴파일 안됨(css변환c))
+// @extend는 %임시클래스도 되는데, .class 일반 클래스도 가능
+
+.btn-green{
+  @extend %btn;
+  color:green;
+}
+.btn-red{
+  @extend %btn;
+  color:red;
+}
+
+
+// @mixin문법 : 긴 코드를 짧은 단어로 축약할 때 씀
+@mixin 작명(){
+  font-size:30px;
+  letter-spacing: -1px;
+}
+
+// @include 작명()
+// 아까 축약했던 코드가 복붙됨
+
+h2{
+  @include 작명();
+}
+
+// 작명대신에 직관적으로 '폰트스타일'로 하는 것이 좋음
+
+
+// @mixin 문법의 $파라미터 : 긴코드를 가변적으로 만들 때 사용
+@mixin 폰트스타일($구멍, $구멍2){
+  font-size:$구멍;
+  letter-spacing: $구멍2;
+}
+
+// @include 폰트스타일()
+
+h5{
+  @include 폰트스타일(40px,1px);
+}
+
+// @mixin 폰트스타일()실행하는데, 구멍자리에 40px;하면
+// font-size:40px적용됨
+
+// 구멍은 우측도 가능하고 좌측에 뚫는것도 가능함
+// #{$구멍3} : -1px; 이런식으로 
+// @include 폰트스타일(40px, letter-spacing)
+// > letter-spacing:-1px;됨
+
+
+
+
+// 다른 파일에 있는 내용 가져오고 싶을 땐
+// @use '3-2.reset';
+// 하면은 3-2.reset.scss 에 있던거 그대로 복붙 해주세요.
+// 3-2.reset은 컴파일 할 필요가 없음 그래서 
+// _파일명.scss 로 저장을 하면 컴파일 x
+
+// 다른파일의 @mixin, $변수 등 가져올 수 있음
+// 대신에 다른파일의 $변수를 쓰려면
+// 파일명.$변수 
+// ex) reset.$메인칼라;
+// 이런식으로 가져다써야함
+
+// function, if, for 이런것들도 있는데 잘 안써서 나중에 필요하면 찾아배우기

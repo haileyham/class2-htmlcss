@@ -1,0 +1,32 @@
+.box {
+  width: 100%;
+}
+
+.background {
+  background-color: #2a4cb2;
+  font-size: 12px;
+}
+
+.btn-red, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-red {
+  color: red;
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+h5 {
+  font-size: 40px;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=3-2.css.map */
