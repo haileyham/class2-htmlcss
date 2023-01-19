@@ -8,10 +8,10 @@
   font-size:30px;
 }
 /* :pseudo-class(다른상태일때)
-::pseudo-element(내부의 일부분만 스타일줄 때) */
+::pseudo-element(내부의 일부분만 스타일줄 때) */ */
 /* float썼을때 담고있는 container박스에 ::after 주고 
 content는 ''; display:block; clear:both; float:none;
-주면 가상의 박스 생긴거임(원래는 div박스 하나 만들어서 clear:both주는데
+/* 주면 가상의 박스 생긴거임(원래는 div박스 하나 만들어서 clear:both주는데
 위와 같은 방법도 있다는 것) */
 .input-file::file-selector-button{
   background:skyblue;
@@ -28,12 +28,12 @@ content는 ''; display:block; clear:both; float:none;
   border:none;
 }
 
-/* .shadow 의 input중에 type=file만 적용 */
-/* -webkit-은 크롬,사파리,edge에서 사용 */
-/* 웹 검사에서 (설정>show user shadow dom 선택되어있으면) html 파일에서 숨겨진 요소 확인 가능
+/* .shadow 의 input중에 type=file만 적용
+-webkit-은 크롬,사파리,edge에서 사용
+웹 검사에서 (설정>show user shadow dom 선택되어있으면) html 파일에서 숨겨진 요소 확인 가능
 거기서 pseudo=""안에 있는것 따오면 됨. 꾸미지 못하는 것들 꾸밀수 있게됨
-<input type="button" value="파일 선택" pseudo="-webkit-file-upload-button" id="file-upload-button"> */
-/* 실제로는 파일업로드 버튼의 경우 label태그 만들어서 스타일을 주고 file은 숨기는 식으로 함 */
+<input type="button" value="파일 선택" pseudo="-webkit-file-upload-button" id="file-upload-button">
+실제로는 파일업로드 버튼의 경우 label태그 만들어서 스타일을 주고 file은 숨기는 식으로 함 */
 
 input::-webkit-input-placeholder{
   color:red;

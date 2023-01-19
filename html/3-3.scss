@@ -1,0 +1,38 @@
+body{
+  margin:0px;
+}
+
+.div{
+  box-sizing: border-box;
+}
+
+
+
+.list-container{
+  width:500px;
+}
+
+.list{
+  width:100%;
+}
+
+%li{
+  width:100px;
+  height:50px;
+  background: pink;
+  border: 1px solid #eee;
+  text-align: center;
+  list-style-type: none;
+}
+
+%active{
+  background: blue;
+}
+
+.list{
+  li{
+    @extend %li;
+  }
+}
+
+
