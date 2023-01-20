@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/3-4.css" rel="stylesheet">
+  <title>3-4</title>
+</head>
+<body>
+  
+  <video src="/img/bridge.mp4" controls></video>
+  <video src="/img/bridge.mp4" controls poster="/img/author.png"></video>
+
+<br>
+<br>
+<br>
+
+<video controls autoplay muted>
+  <source src="/img/bridge.mp4" type="video/mp4">
+  <source src="/img/bridge_m.webm" type="video/mp4">
+</video>
+
+<!-- 위에서 밑에 방법의 경우 호환성을 챙길 수 있음, 위에거 안되면 밑에꺼 적용~하도록 -->
+<!-- controls 를 넣어야 재생 가능해짐
+자동 재생은 autoplay인데 chrome정책상 muted도 같이 넣어야 작동 -->
+<!-- 홈페이지 들어갔을때 동영상 로딩 preload="none"미리다운x / preload="auto"미리다운o / preload="metadata"미리다운 적당히 -->
+<!-- poster="경로" 썸네일 이미지 -->
+
+<br>
+<br>
+<br>
+
+<audio src="/img/bass.mp3" controls></audio>
+<!-- muted, preload, source가능 -->
+<audio controls muted>
+  <source scr="/img/bass.mp3">
+</audio>
+
+<br>
+<br>
+<br>
+
+<div class="video-box">
+  <video class="video-container" autoplay muted loop>
+    <source src="/img/bridge.mp4" type="video/mp4">
+  </video>
+  <h3 class="video-title">HELLO WORLD!</h3>
+</div>
+<!-- 배경화면으로 줄 때  -->
+<br>
+<br>
+<br>
+
+</body>
+</html>

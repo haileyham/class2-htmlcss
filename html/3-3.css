@@ -2,23 +2,64 @@ body {
   margin: 0px;
 }
 
-.div {
+div {
   box-sizing: border-box;
 }
 
-.list-container {
-  width: 500px;
-}
-
-.list {
-  width: 100%;
-}
-
-.list li {
-  width: 100px;
-  height: 50px;
-  background: pink;
+.sh-list li {
+  width: 50%;
+  list-style: none;
+  padding: 15px;
   border: 1px solid #eee;
-  text-align: center;
-  list-style-type: none;
+}
+.sh-list .active {
+  background: skyblue;
+  color: white;
+}
+.sh-list :hover {
+  background: pink;
+  color: white;
+  font-size: 20px;
+}
+
+.box-blue, .box-yellow, .box-green {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  color: white;
+}
+
+.box-green {
+  background: green;
+}
+
+.box-yellow {
+  background: orange;
+}
+
+.box-blue {
+  background: skyblue;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+
+.row .col-4 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+
+@media screen and (min-width: 768px) {
+  .col-md-3 {
+    float: left;
+    width: 25%;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
 }/*# sourceMappingURL=3-3.css.map */

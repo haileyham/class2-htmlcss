@@ -1,0 +1,35 @@
+.ani-text{
+  transform:rotate(10deg);
+  /* 회전 */
+  transform: translateX(100px);
+  /* 좌표이동하고 싶을때 */
+  transform: scale(0.9);
+  /* 크기 변화 */
+}
+
+.text{
+  text-align: center;
+}
+
+.text:hover {
+  animation-name: 왔다갔다;
+  animation-duration: 1s;
+}
+
+/* 복잡한 애니메이션 정의 @keyframes */
+@keyframes 왔다갔다 {
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translate(-100px);
+  }
+  75%{
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+/* 각각 0%>100% 진행률에 따라  */
+
