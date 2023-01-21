@@ -1,0 +1,30 @@
+body{
+  background: gray;
+  height:3000px;
+}
+
+.gray{
+  background: lightgray;
+  height: 2000px;
+  margin-top:500px;
+}
+
+.image{
+  float:right;
+  width:400px;
+  position:sticky;
+  top:100px;
+  /* 스크롤하다가 top 100px에 고정되어있음
+  fixed와 유사하지만 fixed는 계속 고정이고 
+  sticky는 조건부임 , 부모박스 넘어가면 해제 (가변적 포지션 fixed) */
+}
+
+.image img{
+  width:100%;
+}
+/* 이거 안주면 전체폭 엄청 넓어짐; */
+
+.text{
+  float:left;
+  width:300px;
+}

@@ -1,0 +1,34 @@
+.grid-container2{
+  display: grid;
+  width:100%;
+  max-width:600px;
+  margin:auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.grid-container2 img{
+  width:100%;
+  /* 부모랑 img에 둘다 100%주고 max-width부모에 주면 그안에서 채워짐 */
+  display:block;
+  /* 이미지밑에 공간 없애줌(글자처럼 baseline위에 이미지 채워지려해서) */
+}
+
+.grid-big{
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+
+@media screen and (max-width:768px) {
+  .grid-big{
+    grid-column: 1/2;
+    grid-row:1/2;
+  }
+  /* grid-container2의 img 에 주는 것이 아니라 첫번째 레이아웃에다가 주기
+  grid-container2 img 이렇게 주면 이미지 3개만 뜸 */
+  /* 이방법 혹은 그냥 display:block;주기 ㅋㅋ */
+  .grid-container2{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,3 +1,10 @@
+body{
+  margin:0px;
+}
+div{
+  box-sizing: border-box;
+}
+
 .ani-text{
   transform:rotate(10deg);
   /* 회전 */
@@ -33,3 +40,138 @@
 }
 /* 각각 0%>100% 진행률에 따라  */
 
+
+
+.shake-btn{
+  background: skyblue;
+  padding:20px;
+  font-size: 20px;
+  color:white;
+  border: none;
+  border-radius: 5px;
+}
+
+.shake-btn:hover{
+  animation-name: 흔들박스;
+  animation-duration: 1s;
+}
+
+@keyframes 흔들박스{
+  0%{
+    transform: rotate(-10deg);
+  }
+  25%{
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+  75%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+.sign{
+  font-size: 50px;
+  font-weight: 900;
+  width:50px;
+  height:50px;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.sign p{
+  margin:0px;
+}
+
+.sign2:hover{
+  animation-name: 흔들확대;
+  animation-duration: 1s;
+}
+
+@keyframes 흔들확대{
+  50%{
+    transform: rotate(-50deg);
+  }
+  80%{
+    transform: rotate(80deg);
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1.5);
+  }
+}
+
+
+
+.ani-x{
+  margin:100px auto;
+  text-align: center;
+  font-size:80px;
+  width:90px;
+  cursor: pointer;
+}
+
+.ani-x:hover{
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  /* 애니메이션끝나고 마지막 유지 */
+}
+
+@keyframes turn{
+  0%{transform:rotate(0deg)}
+  25%{transform:rotate(-25deg)}
+  100%{transform:rotate(45deg) scale(1.5)}
+}
+
+
+
+
+
+
+.menu-container{
+  width:250px;
+  height:500px;
+  background: black;
+  color:white;
+  padding:20px;
+  transform:translateX(-120px);
+  transition:all 1s;
+}
+
+.menu-container:hover{
+  transform:translateX(0px);
+}
+
+.menu-main{
+  transform:translateX(135px);
+}
+
+@keyframes 메뉴이동{
+  0%{
+    transform: translate(0px);
+  }
+  100%{
+    transform: translateX(-120px);
+  }
+}
+
+
+
+
+
+
+.ani-navbar{
+  width:200px;
+  height:500px;
+  background: black;
+  color: white;
+  padding:25px;
+  text-align: center;
+  position: fixed;
+}
