@@ -1,0 +1,36 @@
+.img1{
+  background-image: url(/img/img1.jpg);
+}
+.img2{
+  background-image: url(/img/img2.jpg);
+}
+.img3{
+  background-image: url(/img/img3.jpg);
+}
+.img4{
+  background-image: url(/img/img4.jpg);
+}
+.img5{
+  background-image: url(/img/img5.jpg);
+}
+
+.img-container{
+  width:80%;
+  margin:auto;
+  display:flex;
+  height:20rem;
+  gap:1rem;
+}
+
+.img-container div{
+  flex:1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 1s cubic-bezier(.25,.4,.45,1.4);
+}
+
+.img-container > div:hover{
+  flex:5;
+}
