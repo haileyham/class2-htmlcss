@@ -54,3 +54,33 @@
   translate:0 -30px; 
   box-shadow: 5px 3px pink, 10px 6px rgb(255, 212, 255), 15px 9px rgb(253, 148, 201);
 }
+
+
+
+
+
+.menu{
+  display:flex;
+  gap:1rem;
+  justify-content: center;
+}
+
+.menu a{
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+  font-weight:900
+}
+
+.menu > a::after{
+  content:"";
+  display:block;
+  width:0%;
+  margin:0 auto;
+  transition: all 1s;
+  border-bottom: 3px solid black;
+}
+
+.menu > a:hover::after{
+  width:100%;
+}
