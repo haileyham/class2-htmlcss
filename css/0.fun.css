@@ -34,3 +34,23 @@
 .img-container > div:hover{
   flex:5;
 }
+
+
+
+
+
+.card{
+  margin:auto;
+  width:150px;
+  height:200px;
+  background-image: url(/img/adventure\ time2.jpg);
+  background-size:cover;
+  border-radius: 10px;
+  transform:rotate(20deg) skew(-10deg,-5deg);
+  transition: all 1s;
+}
+
+.card:hover{
+  translate:0 -30px; 
+  box-shadow: 5px 3px pink, 10px 6px rgb(255, 212, 255), 15px 9px rgb(253, 148, 201);
+}
