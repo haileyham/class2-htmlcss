@@ -1,0 +1,28 @@
+body{
+  margin:0px;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+
+
+.nav-right{
+  display:flex;
+  color:gray;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-right a{
+  flex:1;
+  color:gray;
+}
+
+.nav-right p{
+  flex:3;
+  display:table-cell;
+  text-align:center;
+  vertical-align: middle;
+}
