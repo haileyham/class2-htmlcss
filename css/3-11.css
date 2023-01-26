@@ -1,0 +1,42 @@
+.flip-outer{
+  width:300px;
+  height:300px;
+}
+
+.flip-inner{
+  width:100%;
+  height:100%;
+  position: relative;
+  transition:all 1s;
+  transform-style: preserve-3d;
+  /* 3D로 만들어줘서 앞에있을때 글자 안보여주고 뒤에있을때 사진 안보여주고 */
+}
+
+.front{
+  position: absolute;
+  width:100%;
+  backface-visibility: hidden;
+  /* 뒷면 안보이게 처리 */
+}
+
+.back{
+  width:100%;
+  position: absolute;
+  text-align: center;
+  transform: rotateY(180deg);
+  /* 뒷면은 뒤집었을때 정확히 보이도록 미리 디자인해야함. 그래야 뒤집었을때 정확한방향*/
+  background: orange;
+  height:100%;
+  border-radius: 50%;
+  padding-top:110px;
+  /* 글자 위치 조정 */
+  box-sizing: border-box;
+  /* padding줬을때 원 모양 변형 잡아주기 */
+  backface-visibility: hidden;
+  /* 여기도 같이 front랑 적용해줘서 안보이게해주기 */
+}
+
+.flip-inner:hover{
+  transform: rotateY(180deg);
+}
+

@@ -29,6 +29,11 @@ div {
   padding: 10px;
 }
 
+.content {
+  margin-left: 50px;
+  background: rgb(250, 248, 248);
+}
+
 .nav-container {
   width: 100%;
   height: 50px;
@@ -75,14 +80,110 @@ div {
 
 .row .nav-right {
   align-items: center;
+  justify-content: space-between;
 }
 .row .nav-right a {
   text-decoration: none;
   color: gray;
-  flex: 1;
 }
-.row .nav-right p {
+.row .nav-right .nav-name {
   color: gray;
   display: inline;
-  flex: 1;
+  padding-top: 8px;
+}
+
+.card-container {
+  padding: 30px;
+}
+
+.card-container h3 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.card-4, .card-3, .card-2, .card-1 {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -1px #eee;
+}
+
+.card-1 {
+  border-left: 5px solid rgb(255, 152, 152);
+}
+
+.card-2 {
+  border-left: 5px solid rgb(255, 198, 152);
+}
+
+.card-3 {
+  border-left: 5px solid rgb(195, 248, 188);
+}
+
+.card-4 {
+  border-left: 5px solid rgb(152, 197, 255);
+}
+
+.card-text p {
+  font-size: 12px;
+}
+.card-text h4 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.row2 {
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+.row .col-md-8 {
+  float: left;
+  width: 70%;
+  height: 100%;
+  text-align: left;
+}
+
+.row .col-md-4 {
+  float: left;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.chart-container {
+  padding: 30px;
+}
+
+.chart-left {
+  width: 100%;
+  box-shadow: 2px 2px 5px 2px rgb(219, 219, 219);
+}
+
+.chart-left h6 {
+  padding: 10px;
+  background: rgb(238, 237, 237);
+  font-weight: 900;
+  border-bottom: 5px solid #eee;
+}
+
+.chart-left img {
+  width: 100%;
+  padding: 10px;
+}
+
+.chart-ul {
+  width: 100%;
+  box-shadow: 2px 2px 5px 2px rgb(219, 219, 219);
+}
+
+.chart-ul li {
+  list-style: none;
+  padding: 1px;
+  width: 100%;
+  border: 1px solid #eee;
+  text-align: left;
 }/*# sourceMappingURL=3-10.css.map */

@@ -1,0 +1,44 @@
+.flip-outer{
+  width:500px;
+  height:500px;
+}
+
+.flip-inner{
+  width:100%;
+  height:100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-inner:hover{
+  transform:rotateY(180deg);
+}
+
+
+.front img{
+  width:100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.back{
+  width:100%;
+  height:100%;
+  /* backface-visibility: hidden; */
+  position: absolute;
+  text-align: center;
+  padding-top:220px;
+  background: orange;
+  border-radius: 50%;
+  box-sizing: border-box;
+  /* transform: rotateY(180deg); */
+}
+
+.back-a{
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  position: absolute;
+  transform: rotateY(180deg);
+}
