@@ -84,3 +84,51 @@
 .menu > a:hover::after{
   width:100%;
 }
+
+
+
+
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  top:0;
+  /* 코드에는 top:0이 없었는데 적용안하면 위치 이상 */
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: white;
+  /* 배경화면 흰색이라 흰색으로 변경 */
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+  /* 클릭했을때 input border색상 변경 */
+}
+/* :is에 대해서 알게됐다 */
