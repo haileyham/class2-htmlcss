@@ -28,6 +28,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
+  /* cover해도 똑같음. cotain하면 또 색다르다 ㄲㄲ */
   transition: all 1s cubic-bezier(.25,.4,.45,1.4);
 }
 
@@ -132,3 +133,40 @@
   /* 클릭했을때 input border색상 변경 */
 }
 /* :is에 대해서 알게됐다 */
+
+
+
+
+
+.loader{
+  border:4px solid pink;
+  border-radius: 50%;
+  /* border-left-color:transparent; */
+  width:40px;
+  height:40px;
+  margin:auto;
+  /* animation-name: spin;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  liner해야 매끄럽게 돌아감 */
+  /* border-right-color:white; */
+}
+
+.loader:hover{
+  border-left-color:transparent;
+  animation-name: spin;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* liner해야 매끄럽게 돌아감 */
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
