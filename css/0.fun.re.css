@@ -33,3 +33,179 @@ div{
 .menu > a:hover::after{
   width:100%;
 }
+
+
+
+
+.flex-img1{
+  background-image: url(/img/img1.jpg);
+}
+.flex-img2{
+  background-image: url(/img/img2.jpg);
+}.flex-img3{
+  background-image: url(/img/img3.jpg);
+}.flex-img4{
+  background-image: url(/img/img4.jpg);
+}.flex-img5{
+  background-image: url(/img/img5.jpg);
+}
+
+.flex-container{
+  display:flex;
+  width:80%;
+  height:300px;
+  margin:auto;
+  gap:10px;
+}
+
+.flex-container div{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex:1;
+  border-radius: 15px;
+  transition: all 1s;
+}
+
+.flex-container >div:hover{
+  flex:7;
+}
+
+
+
+
+.shadow-img{
+  background-image: url(/img/adventure\ time2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:auto;
+  width:200px;
+  height:200px;
+  transform: rotate(30deg) skew(-20deg);
+  border-radius: 20px;
+  transition: all 1s;
+}
+
+.shadow-img:hover {
+  box-shadow: 10px 10px pink, 20px 20px rgb(248, 154, 170), 30px 30px rgb(250, 126, 147);
+  /* transform: translate(0,30px); */
+  translate: 0 -30px;
+  /* transform 으로하면 세워진 상태로 돌아감 */
+  /* https://im-designloper.tistory.com/43
+  transform, translate, transition 비교참고 */
+}
+
+
+
+
+.out-card{
+  width:200px;
+  height:200px;
+  margin:auto;
+}
+
+.in-card{
+  width:100%;
+  height:100%;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front{
+  /* position: absolute; */
+  backface-visibility: hidden;
+  position: absolute;
+}
+/* img에 줘도 상관없음 */
+
+.front img{
+  width:100%;
+  border-radius: 50%;
+  /* backface-visibility: hidden;
+  position: absolute; */
+}
+
+.back-a{
+  text-decoration: none;
+  color:white;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+  transform:rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.back{
+  width:200px;
+  height:200px;
+  background: rgb(250, 205, 122);
+  border-radius: 50%;
+  padding: 60px;
+}
+
+.in-card:hover{
+  transform: rotateY(180deg);
+}
+/* 바보같이 out에 주고있었다. */
+
+
+
+.loader{
+  margin:auto;
+  width:50px;
+  height:50px;
+  border: 5px solid orange;
+  border-radius: 50%;
+  border-left-color:white;
+  animation-name: 빙글;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes 빙글{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.name-container{
+  margin:auto;
+  width:200px;
+  height:200px;
+  position: relative;
+}
+
+.name-container input{
+  border: 5px solid #eee;
+  border-radius: 20px;
+  padding:20px;
+  outline: none;
+  /* 이거안하면 클릭했을때 border 겉에 검정선 생김 */
+}
+
+.name-container label{
+  position: absolute;
+  top:20px;
+  left:0px;
+  margin-left:30px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.name-container :is(input:focus, input:vaild)~label{
+  top:0px;
+  left:0px;
+  background: white;
+  border-radius: 50px;
+  padding:5px;
+  transform: translateY(-50%) scale(0.9);
+}
+
+.name-container :is(input:focus, input:vaild){
+  border-color: rgb(150, 150, 200);
+}
